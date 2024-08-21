@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>脱出企画</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        h1, label {
+            letter-spacing: -0.5px;
+            white-space: nowrap;
+            font-size: 2rem;
+        }
+        
+        /* スマートフォン用のスタイル */
+        @media (max-width: 600px) {
+            h1, label {
+                font-size: 1.5rem;  /* スマホ向けにフォントサイズを調整 */
+                letter-spacing: normal;  /* 文字間隔を標準に戻す */
+                white-space: normal;  /* テキストが折り返されるように設定 */
+            }
+            body {
+                padding: 10px;  /* 画面の端にスペースを追加して視認性を向上 */
+            }
+        }
+    </style>
     <script>
         function checkAnswer() {
-            var answer = document.getElementById("answer").value.toLowerCase(); // 小文字に変換
+            var answer = document.getElementById("answer").value.toLowerCase();
             if (answer === "ほーす") {
-                window.location.href = "correct.html"; // 正解ページ
+                window.location.href = "correct.html";
             } else {
-                window.location.href = "incorrect.html"; // 不正解ページ
+                window.location.href = "incorrect.html";
             }
-            return false; // フォームの送信を防ぐ
+            return false;
         }
     </script>
 </head>
