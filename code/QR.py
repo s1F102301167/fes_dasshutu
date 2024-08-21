@@ -1,7 +1,7 @@
 import qrcode
 
 # URLを指定
-url = "https://example.com/my_page.html"
+url = "file:///C:/Users/iniad/Documents/脱出企画/code/my_page.html"
 
 # QRコードを生成
 qr = qrcode.QRCode(
