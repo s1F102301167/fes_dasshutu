@@ -7,7 +7,7 @@
     <script>
         function checkAnswer() {
             var answer = document.getElementById("answer").value.toLowerCase(); // 小文字に変換
-            if (answer === "かんでん") {
+            if (answer === "ほーす") {
                 window.location.href = "correct.html"; // 正解ページ
             } else {
                 window.location.href = "incorrect.html"; // 不正解ページ
@@ -18,9 +18,9 @@
 </head>
 <body>
     <h1>次の問題に答えてください</h1>
-    <p>ここに問題の画像</p>
+    <img src="../img/問題.png" alt="問題の画像">
     <form onsubmit="return checkAnswer();">
-        <label for="answer">解答をひらがなで入力してください</label><br>
+        <label for="answer">①②③にあてはまるようにひらがなで解答してください</label><br>
         <input type="text" id="answer" name="answer"><br><br>
         <input type="submit" value="送信">
     </form>
